@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="SlidingButton">
+        <attr name="sliding_text" format="string|reference" />
+        <attr name="sliding_text_size" format="dimension|reference" />
+        <attr name="sliding_text_color" format="color|reference" />
+        <attr name="sliding_text_background" format="color|reference" />
+        <attr name="sliding_text_fontFamily" format="string|reference" />
+        <attr name="sliding_text_textStyle" format="flags">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+        <attr name="sliding_text_paddingStart" format="dimension|reference" />
+        <attr name="sliding_text_paddingTop" format="dimension|reference" />
+        <attr name="sliding_text_paddingEnd" format="dimension|reference" />
+        <attr name="sliding_text_paddingBottom" format="dimension|reference" />
+
+        <attr name="sliding_button_width" format="dimension|reference" />
+        <attr name="sliding_button_height" format="dimension|reference" />
+        <attr name="sliding_button_icon" format="reference" />
+        <attr name="sliding_button_icon_tint" format="color|reference" />
+        <attr name="sliding_icon_scaleType" format="enum">
+            <enum name="centerInside" value="7" />
+            <enum name="centerCrop" value="6" />
+            <enum name="center" value="5" />
+            <enum name="fitCenter" value="3" />
+            <enum name="fitXY" value="1" />
+        </attr>
+        <attr name="sliding_button_background" format="color|reference" />
+
+        <attr name="sliding_button_marginStart" format="dimension|reference" />
+        <attr name="sliding_button_marginTop" format="dimension|reference" />
+        <attr name="sliding_button_marginEnd" format="dimension|reference" />
+        <attr name="sliding_button_marginBottom" format="dimension|reference" />
+
+        <attr name="sliding_button_paddingStart" format="dimension|reference" />
+        <attr name="sliding_button_paddingTop" format="dimension|reference" />
+        <attr name="sliding_button_paddingEnd" format="dimension|reference" />
+        <attr name="sliding_button_paddingBottom" format="dimension|reference" />
+
+        <attr name="sliding_showTrack" format="boolean" />
+        <attr name="sliding_trackBackground" format="color|reference" />
+        <attr name="sliding_trackBackgroundTint" format="color|reference" />
+        <attr name="sliding_trackExtendTo" format="enum">
+            <enum value="0" name="container"/>
+            <enum value="1" name="button"/>
+        </attr>
+        <attr name="sliding_enabledTextAlpha" format="boolean" />
+        <attr name="sliding_corner_radius" format="dimension|reference"/>
+    </declare-styleable>
+
+    <attr name="slidingButtonStyle" format="reference" />
+</resources>

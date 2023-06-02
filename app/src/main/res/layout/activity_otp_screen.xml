@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpScreen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Phone Number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:id="@+id/text"
+        android:fontFamily="@font/segoe"
+        />
+
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:id="@+id/animation_view"-->
+<!--        android:layout_width="200sp"-->
+<!--        android:layout_height="200sp"-->
+<!--        android:layout_below="@id/text"-->
+<!--        app:lottie_autoPlay="true"-->
+<!--        app:lottie_loop="true"-->
+<!--        app:lottie_rawRes="@raw/phoneno"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:paddingBottom="20dp"/>-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/text"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:background="@drawable/otp"-->
+<!--        android:id="@+id/otpimg"/>-->
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/text"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/phoneimg"
+        android:id="@+id/otpphoneimg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Enter Your Phone Number\n
+             from Your Device"
+        android:layout_below="@id/otpphoneimg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:fontFamily="@font/segoe"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/llnumber">
+
+        <com.hbb20.CountryCodePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ccp"
+            app:ccp_showFullName="false"
+            app:ccp_showPhoneCode="true"
+            app:ccp_showNameCode="false"
+            app:ccp_showFlag="true"
+            app:ccp_autoFormatNumber="true"
+            app:ccp_showArrow="true"
+            app:ccp_textSize="18dp"
+            app:ccp_arrowSize="16dp"
+            app:ccpDialog_keyboardAutoPopup="false"
+            app:ccp_defaultNameCode="NG"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:textColor="@color/black"
+            android:inputType="phone"
+            android:id="@+id/etPhoneNumber"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/llnumber"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="Send OTP"
+        android:textAllCaps="false"
+        android:id="@+id/sendotp"/>
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Enter Your Number"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="20sp"-->
+<!--        android:id="@+id/otptext"/>-->
+
+
+
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_below="@id/otptext"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:id="@+id/otp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:hint="123456"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_below="@id/otp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:id="@+id/getotp"-->
+<!--        android:text="Get Otp"-->
+<!--        android:textAllCaps="true"/>-->
+
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_below="@id/otp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:id="@+id/verifybtn"-->
+<!--        android:text="Verify"-->
+<!--        android:textAllCaps="true"/>-->
+
+<!--    <TimePicker-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/time"-->
+<!--        android:layout_below="@id/verifybtn"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_centerHorizontal="true"/>-->
+</RelativeLayout>

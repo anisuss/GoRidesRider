@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/trip_bg"
+        tools:context=".MyWalletActivity">
+
+        <ImageButton
+            android:id="@+id/backbtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver Name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/segoe"
+            android:id="@+id/drivername"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go Ride Wallet"
+            android:textSize="22dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/backbtn"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/segoe"
+            android:textStyle="bold"
+            android:id="@+id/tetx"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tetx"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            card:cardCornerRadius="15dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Go Ride Cash"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoe"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/ridetext"/>
+
+
+                <TextView
+                    android:id="@+id/countrySign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ridetext"
+                    android:fontFamily="@font/segoe"
+                    android:text="₦"
+                    android:textColor="@color/black"
+                    android:textSize="26dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/driverbalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoe"
+                    android:text="0.00"
+                    android:textColor="@color/black"
+                    android:textSize="26dp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/ridetext"
+                    android:layout_toRightOf="@id/countrySign"
+                    android:layout_marginLeft="5dp"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/driverbalance"
+                    android:background="@drawable/information"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/infoicon"/>
+
+                <TextView
+                    android:id="@+id/wallettext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoe"
+                    android:text="Auto refill is off"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_below="@id/driverbalance"
+                    android:layout_toRightOf="@id/infoicon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"/>
+
+                <ImageButton
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/wallettext"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/pay_btn_shape"
+                    android:id="@+id/paynow"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pay Now"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/wallettext"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginLeft="60dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/segoe"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/btnBack"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@color/app_dark_green"-->
+<!--                android:drawableLeft="@drawable/ic_baseline_arrow_back_24"-->
+<!--                android:drawableTint="@color/white"-->
+<!--                android:fontFamily="@font/segoe"-->
+<!--                android:gravity="center"-->
+<!--                android:padding="15dp"-->
+<!--                android:text="My Wallet"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="16dp" />-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="220dp"-->
+<!--                android:layout_marginLeft="14dp"-->
+<!--                android:layout_marginRight="14dp"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                card:cardCornerRadius="5dp">-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="220dp"-->
+<!--                    >-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/countrySign"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@id/drivername"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        android:layout_toLeftOf="@id/driverbalance"-->
+<!--                        android:fontFamily="@font/segoe"-->
+<!--                        android:text="₦"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="30dp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:layout_marginTop="47dp"-->
+<!--                        android:layout_marginRight="10dp"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/driverbalance"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        android:fontFamily="@font/segoe"-->
+<!--                        android:text="0"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="30dp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Your Balance"-->
+<!--                    android:id="@+id/balancetext"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_marginBottom="20dp"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="24dp"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:fontFamily="@font/segoe"-->
+<!--                    />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Driver Name"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:textSize="22dp"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:fontFamily="@font/segoe"-->
+<!--                        android:id="@+id/drivername"/>-->
+<!--                </RelativeLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="65dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginRight="14dp"-->
+<!--                android:layout_marginLeft="14dp"-->
+<!--                android:text="Pay Now"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:id="@+id/paynow"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text=""-->
+<!--                android:textSize="50dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:id="@+id/amount"/>-->
+<!--&lt;!&ndash;            <LinearLayout&ndash;&gt;-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
+
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:fontFamily="@font/segoe"-->
+<!--                    android:gravity="center"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:text="2920 ₦"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="25dp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="total Earnings"-->
+<!--                    android:fontFamily="@font/segoe"-->
+<!--                    android:textAllCaps="true"-->
+<!--                    android:textColor="@color/white" />-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/layoutLoadDetails"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="15dp"-->
+
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:layout_marginRight="15dp"-->
+
+<!--                    android:layout_marginBottom="5dp"-->
+<!--                    android:elevation="10dp"-->
+<!--                    card:cardCornerRadius="10dp">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@color/app_yellow"-->
+<!--                        android:drawableLeft="@drawable/ic_baseline_monetization_on_24"-->
+<!--                        android:drawableRight="@drawable/ic_baseline_double_arrow_24"-->
+<!--                        android:fontFamily="@font/segoe"-->
+<!--                        android:gravity="center"-->
+<!--                        android:padding="13dp"-->
+<!--                        android:text="Payment Method"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="15dp"-->
+<!--                        android:textStyle="bold" />-->
+
+
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right"-->
+<!--                    android:layout_marginLeft="15dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginRight="15dp"-->
+<!--                    android:layout_marginBottom="2dp"-->
+
+
+<!--                    android:elevation="10dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    card:cardCornerRadius="10dp">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            card:cardCornerRadius="25dp"-->
+<!--                            card:cardPreventCornerOverlap="false">-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="50dp"-->
+<!--                                android:layout_height="50dp"-->
+<!--                                android:scaleType="centerCrop"-->
+<!--                                android:src="@drawable/dumy" />-->
+<!--                        </androidx.cardview.widget.CardView>-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_alignParentLeft="true"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:layout_marginLeft="5dp"-->
+<!--                                android:orientation="vertical">-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+
+<!--                                    android:layout_gravity="center"-->
+<!--                                    android:fontFamily="@font/segoe"-->
+<!--                                    android:text="Hamza Ali Hamza"-->
+<!--                                    android:textColor="@color/black" />-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:fontFamily="@font/segoe"-->
+
+<!--                                    android:text="#Go47547" />-->
+<!--                            </LinearLayout>-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_alignParentRight="true"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:fontFamily="@font/segoe"-->
+<!--                                android:gravity="center"-->
+<!--                                android:padding="15dp"-->
+<!--                                android:text="420 ₦"-->
+<!--                                android:textColor="@color/app_dark_green"-->
+<!--                                android:textSize="20dp"-->
+<!--                                android:textStyle="bold" />-->
+<!--                        </RelativeLayout>-->
+
+
+<!--                    </LinearLayout>-->
+
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right"-->
+<!--                    android:layout_marginLeft="15dp"-->
+<!--                    android:layout_marginTop="2dp"-->
+<!--                    android:layout_marginRight="15dp"-->
+<!--                    android:layout_marginBottom="2dp"-->
+
+
+<!--                    android:elevation="10dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    card:cardCornerRadius="10dp">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            card:cardCornerRadius="25dp"-->
+<!--                            card:cardPreventCornerOverlap="false">-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="50dp"-->
+<!--                                android:layout_height="50dp"-->
+<!--                                android:scaleType="centerCrop"-->
+<!--                                android:src="@drawable/dumy" />-->
+<!--                        </androidx.cardview.widget.CardView>-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_alignParentLeft="true"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:layout_marginLeft="5dp"-->
+<!--                                android:orientation="vertical">-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_gravity="center"-->
+<!--                                    android:fontFamily="@font/segoe"-->
+<!--                                    android:text="Hamza Ali Hamza"-->
+<!--                                    android:textColor="@color/black" />-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:fontFamily="@font/segoe"-->
+<!--                                    android:text="#Go47547" />-->
+<!--                            </LinearLayout>-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_alignParentRight="true"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:fontFamily="@font/segoe"-->
+<!--                                android:gravity="center"-->
+<!--                                android:padding="15dp"-->
+<!--                                android:text="420 ₦"-->
+<!--                                android:textColor="@color/app_dark_green"-->
+<!--                                android:textSize="20dp"-->
+<!--                                android:textStyle="bold" />-->
+<!--                        </RelativeLayout>-->
+
+
+<!--                    </LinearLayout>-->
+
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right"-->
+<!--                    android:layout_marginLeft="15dp"-->
+<!--                    android:layout_marginTop="2dp"-->
+<!--                    android:layout_marginRight="15dp"-->
+<!--                    android:layout_marginBottom="2dp"-->
+
+
+<!--                    android:elevation="10dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    card:cardCornerRadius="10dp">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            card:cardCornerRadius="25dp"-->
+<!--                            card:cardPreventCornerOverlap="false">-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="50dp"-->
+<!--                                android:layout_height="50dp"-->
+<!--                                android:scaleType="centerCrop"-->
+<!--                                android:src="@drawable/dumy" />-->
+<!--                        </androidx.cardview.widget.CardView>-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_alignParentLeft="true"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:layout_marginLeft="5dp"-->
+<!--                                android:orientation="vertical">-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_gravity="center"-->
+<!--                                    android:fontFamily="@font/segoe"-->
+<!--                                    android:text="Hamza Ali Hamza"-->
+<!--                                    android:textColor="@color/black" />-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:fontFamily="@font/segoe"-->
+<!--                                    android:text="#Go47547" />-->
+<!--                            </LinearLayout>-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_alignParentRight="true"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:fontFamily="@font/segoe"-->
+<!--                                android:gravity="center"-->
+<!--                                android:padding="15dp"-->
+<!--                                android:text="420 ₦"-->
+<!--                                android:textColor="@color/app_dark_green"-->
+<!--                                android:textSize="20dp"-->
+<!--                                android:textStyle="bold" />-->
+<!--                        </RelativeLayout>-->
+
+
+<!--                    </LinearLayout>-->
+
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right"-->
+<!--                    android:layout_marginLeft="15dp"-->
+<!--                    android:layout_marginTop="2dp"-->
+<!--                    android:layout_marginRight="15dp"-->
+<!--                    android:layout_marginBottom="2dp"-->
+
+
+<!--                    android:elevation="10dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    card:cardCornerRadius="10dp">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            card:cardCornerRadius="25dp"-->
+<!--                            card:cardPreventCornerOverlap="false">-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="50dp"-->
+<!--                                android:layout_height="50dp"-->
+<!--                                android:scaleType="centerCrop"-->
+<!--                                android:src="@drawable/dumy" />-->
+<!--                        </androidx.cardview.widget.CardView>-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_alignParentLeft="true"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:layout_marginLeft="5dp"-->
+<!--                                android:orientation="vertical">-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_gravity="center"-->
+<!--                                    android:fontFamily="@font/segoe"-->
+<!--                                    android:text="Hamza Ali Hamza"-->
+<!--                                    android:textColor="@color/black" />-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:fontFamily="@font/segoe"-->
+<!--                                    android:text="#Go47547" />-->
+<!--                            </LinearLayout>-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_alignParentRight="true"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:fontFamily="@font/segoe"-->
+<!--                                android:gravity="center"-->
+<!--                                android:padding="15dp"-->
+<!--                                android:text="420 ₦"-->
+<!--                                android:textColor="@color/app_dark_green"-->
+<!--                                android:textSize="20dp"-->
+<!--                                android:textStyle="bold" />-->
+<!--                        </RelativeLayout>-->
+
+
+<!--                    </LinearLayout>-->
+
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right"-->
+<!--                    android:layout_marginLeft="15dp"-->
+<!--                    android:layout_marginTop="2dp"-->
+<!--                    android:layout_marginRight="15dp"-->
+<!--                    android:layout_marginBottom="2dp"-->
+
+
+<!--                    android:elevation="10dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    card:cardCornerRadius="10dp">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            card:cardCornerRadius="25dp"-->
+<!--                            card:cardPreventCornerOverlap="false">-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="50dp"-->
+<!--                                android:layout_height="50dp"-->
+<!--                                android:scaleType="centerCrop"-->
+<!--                                android:src="@drawable/dumy" />-->
+<!--                        </androidx.cardview.widget.CardView>-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_alignParentLeft="true"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:layout_marginLeft="5dp"-->
+<!--                                android:orientation="vertical">-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_gravity="center"-->
+<!--                                    android:fontFamily="@font/segoe"-->
+<!--                                    android:text="Hamza Ali Hamza"-->
+<!--                                    android:textColor="@color/black" />-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:fontFamily="@font/segoe"-->
+<!--                                    android:text="#Go47547" />-->
+<!--                            </LinearLayout>-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_alignParentRight="true"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:fontFamily="@font/segoe"-->
+<!--                                android:gravity="center"-->
+<!--                                android:padding="15dp"-->
+<!--                                android:text="420 ₦"-->
+<!--                                android:textColor="@color/app_dark_green"-->
+<!--                                android:textSize="20dp"-->
+<!--                                android:textStyle="bold" />-->
+<!--                        </RelativeLayout>-->
+
+
+<!--                    </LinearLayout>-->
+
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right"-->
+<!--                    android:layout_marginLeft="15dp"-->
+<!--                    android:layout_marginTop="2dp"-->
+<!--                    android:layout_marginRight="15dp"-->
+<!--                    android:layout_marginBottom="2dp"-->
+
+
+<!--                    android:elevation="10dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    card:cardCornerRadius="10dp">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            card:cardCornerRadius="25dp"-->
+<!--                            card:cardPreventCornerOverlap="false">-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="50dp"-->
+<!--                                android:layout_height="50dp"-->
+<!--                                android:scaleType="centerCrop"-->
+<!--                                android:src="@drawable/dumy" />-->
+<!--                        </androidx.cardview.widget.CardView>-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_alignParentLeft="true"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:layout_marginLeft="5dp"-->
+<!--                                android:orientation="vertical">-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_gravity="center"-->
+<!--                                    android:fontFamily="@font/segoe"-->
+<!--                                    android:text="Hamza Ali Hamza"-->
+<!--                                    android:textColor="@color/black" />-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:fontFamily="@font/segoe"-->
+<!--                                    android:text="#Go47547" />-->
+<!--                            </LinearLayout>-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_alignParentRight="true"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:fontFamily="@font/segoe"-->
+<!--                                android:gravity="center"-->
+<!--                                android:padding="15dp"-->
+<!--                                android:text="420 ₦"-->
+<!--                                android:textColor="@color/app_dark_green"-->
+<!--                                android:textSize="20dp"-->
+<!--                                android:textStyle="bold" />-->
+<!--                        </RelativeLayout>-->
+
+
+<!--                    </LinearLayout>-->
+
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right"-->
+<!--                    android:layout_marginLeft="15dp"-->
+<!--                    android:layout_marginTop="2dp"-->
+<!--                    android:layout_marginRight="15dp"-->
+<!--                    android:layout_marginBottom="2dp"-->
+
+
+<!--                    android:elevation="10dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    card:cardCornerRadius="10dp">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            card:cardCornerRadius="25dp"-->
+<!--                            card:cardPreventCornerOverlap="false">-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="50dp"-->
+<!--                                android:layout_height="50dp"-->
+<!--                                android:scaleType="centerCrop"-->
+<!--                                android:src="@drawable/dumy" />-->
+<!--                        </androidx.cardview.widget.CardView>-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_alignParentLeft="true"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:layout_marginLeft="5dp"-->
+<!--                                android:orientation="vertical">-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_gravity="center"-->
+<!--                                    android:fontFamily="@font/segoe"-->
+<!--                                    android:text="Hamza Ali Hamza"-->
+<!--                                    android:textColor="@color/black" />-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:fontFamily="@font/segoe"-->
+<!--                                    android:text="#Go47547" />-->
+<!--                            </LinearLayout>-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_alignParentRight="true"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:fontFamily="@font/segoe"-->
+<!--                                android:gravity="center"-->
+<!--                                android:padding="15dp"-->
+<!--                                android:text="420 ₦"-->
+<!--                                android:textColor="@color/app_dark_green"-->
+<!--                                android:textSize="20dp"-->
+<!--                                android:textStyle="bold" />-->
+<!--                        </RelativeLayout>-->
+
+
+<!--                    </LinearLayout>-->
+
+<!--                </androidx.cardview.widget.CardView>-->
+
+
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+
+<!--    </RelativeLayout>-->
+</layout>

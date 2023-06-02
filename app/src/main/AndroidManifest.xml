@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.goridesnigeria.goridesrider">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS"
+        tools:node="remove" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.goridesnigeria.goridesrider.model.GoRideAppplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/goridedriver"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/goridedriver"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GoRidesRider"
+        tools:targetApi="31">
+        <activity
+            android:name="com.goridesnigeria.goridesrider.MessageActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.goridesnigeria.goridesrider.Payment_Receipt"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.goridesnigeria.goridesrider.receipt_Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.goridesnigeria.goridesrider.VerifyOtp"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.goridesnigeria.goridesrider.Card_Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.goridesnigeria.goridesrider.OtpScreen"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.goridesnigeria.goridesrider.Terms_And_Condition"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.goridesnigeria.goridesrider.Reject_Ride_Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name="com.goridesnigeria.gorides.activities.NotificationsActivity" />
+        <activity
+            android:name="com.goridesnigeria.goridesrider.ConfirmPickupActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.goridesnigeria.goridesrider.RideDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.goridesnigeria.goridesrider.IncomingRequestActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.goridesnigeria.goridesrider.MyWalletActivity"
+            android:exported="false" />
+        <activity android:name="com.goridesnigeria.goridesrider.ProfileUpdateActivity" />
+        <activity
+            android:name="com.goridesnigeria.goridesrider.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.goridesnigeria.goridesrider.LoginActivity"
+            android:exported="false" />
+        <!--
+    <service
+            android:name=".FirebaseService.MyFirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyALIkGkUzfGHj8eIyXUmjnrIui2r_P3r-o" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_car" />
+
+        <activity android:name="com.goridesnigeria.gorides.activities.CardAndAccountsActivity" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/purple_700" />
+        <meta-data
+            android:name="com.goridesnigeria.goridesrider.model.GoRideAppplication"
+            android:resource="@color/purple_200" />
+
+        <activity
+            android:name="com.goridesnigeria.goridesrider.CarInspectionActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.goridesnigeria.goridesrider.SignupCarInformationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.goridesnigeria.goridesrider.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.goridesnigeria.goridesrider.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.goridesnigeria.goridesrider.LoginOrRegisterActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.goridesnigeria.appServices.DriverLocationUpdateService"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>

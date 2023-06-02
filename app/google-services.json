@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "951805360934",
+    "firebase_url": "https://goridesnigeria-default-rtdb.firebaseio.com",
+    "project_id": "goridesnigeria",
+    "storage_bucket": "goridesnigeria.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951805360934:android:226be558a8b5151b6e5fe7",
+        "android_client_info": {
+          "package_name": "com.goridesnigeria.goridesrider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951805360934-9odllurebq9o5bfoh0o81nbfosnmrchs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.goridesnigeria.goridesrider",
+            "certificate_hash": "0dbcf0fb3643af08007d5ed0e22323eabf0cd45a"
+          }
+        },
+        {
+          "client_id": "951805360934-gbjhae6dul8neu7rqkpqtdbmtal9vek4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW18gzDLQAZn5Y-1iz5s1vin3Zbm7VRlI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951805360934-gbjhae6dul8neu7rqkpqtdbmtal9vek4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951805360934:android:262a36f9ee1debf96e5fe7",
+        "android_client_info": {
+          "package_name": "com.goridesnigeria.goridess"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951805360934-rtohdi79epktt69rnkjarueprm1k02bi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.goridesnigeria.goridess",
+            "certificate_hash": "0dbcf0fb3643af08007d5ed0e22323eabf0cd45a"
+          }
+        },
+        {
+          "client_id": "951805360934-gbjhae6dul8neu7rqkpqtdbmtal9vek4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW18gzDLQAZn5Y-1iz5s1vin3Zbm7VRlI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951805360934-gbjhae6dul8neu7rqkpqtdbmtal9vek4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

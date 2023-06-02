@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginBottom="5dp"
+    android:elevation="10dp"
+    card:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/driveridicon"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passenger Name"
+            android:textColor="@color/app_yellow"
+            android:layout_toRightOf="@id/icon"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/segoe"
+            android:id="@+id/pname"/>
+
+<!--        <ImageView-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:src="@drawable/wallet"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:id="@+id/wallet"-->
+<!--            android:layout_below="@+id/icon"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Hafiz Hamza Zulfiqar"-->
+<!--            android:textColor="@color/app_yellow"-->
+<!--            android:layout_below="@id/icon"-->
+<!--            android:layout_marginLeft="35dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:textSize="18dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:id="@+id/pname"-->
+<!--            android:fontFamily="@font/segoe"-->
+<!--            />-->
+
+        <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/wallet"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/wallet"
+                    android:layout_below="@+id/icon"
+                    android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₦"
+            android:textColor="@color/app_yellow"
+            android:layout_below="@id/pname"
+            android:layout_marginLeft="13dp"
+            android:textSize="18dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/faretext"
+            android:textStyle="bold"
+            android:fontFamily="@font/segoe"
+            android:layout_toRightOf="@id/wallet"
+            android:layout_marginTop="30dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="242"
+            android:textColor="@color/app_yellow"
+            android:layout_below="@id/pname"
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/fare"
+            android:fontFamily="@font/segoe"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/faretext"
+            />
+
+<!--        <TextView-->
+<!--            android:id="@+id/fare"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/faretext"-->
+<!--            android:layout_marginLeft="8dp"-->
+<!--            android:layout_toRightOf="@id/faretext2"-->
+<!--            android:fontFamily="@font/segoe"-->
+<!--            android:text="242"-->
+<!--            android:textColor="@color/app_yellow"-->
+<!--            android:textSize="16dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:layout_marginTop="5dp"/>-->
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/date"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/date"
+            android:layout_below="@+id/fare"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14-12-2022 21:15:56"
+            android:textColor="@color/app_yellow"
+            android:layout_below="@id/fare"
+            android:layout_marginLeft="13dp"
+            android:textSize="18dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/dateandtime"
+            android:textStyle="bold"
+            android:fontFamily="@font/segoe"
+            android:layout_toRightOf="@id/date"
+            android:layout_marginTop="23dp"
+            />
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="14-12-2022 21:15:56"-->
+<!--            android:textColor="@color/app_yellow"-->
+<!--            android:layout_below="@id/datetimetext"-->
+<!--            android:layout_marginLeft="35dp"-->
+<!--            android:textSize="16dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:id="@+id/dateandtime"-->
+<!--            android:fontFamily="@font/segoe"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            />-->
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/pick"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/pick"
+            android:layout_marginTop="7dp"
+            android:layout_toLeftOf="@id/pickuptext"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Up"
+            android:textColor="@color/app_green"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:textSize="16dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/pickuptext"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/segoe"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Johar Town"
+            android:textColor="@color/app_yellow"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:textSize="16dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/pickup"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/pickuptext"
+            android:fontFamily="@font/segoe"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/drop"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/destinationicon"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/dateandtime"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drop Off"
+            android:textColor="@color/app_green"
+            android:textSize="16dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/destinationtext"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:layout_below="@id/dateandtime"
+            android:fontFamily="@font/segoe"
+            android:layout_toRightOf="@id/destinationicon"
+            android:layout_marginLeft="10dp"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/drop"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/destinationicon2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/destinationicon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jamia Masjid Hanifa No 1"
+            android:textColor="@color/app_yellow"
+            android:layout_marginLeft="13dp"
+            android:textSize="16dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/destination"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:layout_below="@id/destinationicon"
+            android:fontFamily="@font/segoe"
+            android:layout_toRightOf="@id/destinationicon2"
+            />
+
+    </RelativeLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:padding="7dp"-->
+<!--        android:weightSum="2">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_weight="1"-->
+<!--            android:orientation="vertical"-->
+<!--            android:padding="5dp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="25dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:background="@drawable/driveridicon"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:id="@+id/icon"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/segoe"-->
+<!--                android:text="Hafiz Hamza Zulfiqar ALi"-->
+<!--                android:textColor="@color/app_yellow"-->
+<!--                android:id="@+id/pname"-->
+<!--                android:layout_marginTop="5dp"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/segoe"-->
+<!--                android:text="Fare"-->
+<!--                android:textColor="@color/app_green"-->
+<!--                android:id="@+id/price"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:textSize="16dp"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/faresign"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:text="₦ "-->
+<!--                android:textColor="@color/app_dark_green"-->
+<!--                android:textSize="20dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_toLeftOf="@id/fare"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/fare"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:gravity="center"-->
+<!--                android:text="420"-->
+<!--                android:textColor="@color/app_dark_green"-->
+<!--                android:textSize="20dp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/segoe"-->
+<!--                android:text="28 june 2022 6:00 PM"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:id="@+id/dateandtime"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:fontFamily="@font/segoe"-->
+<!--                android:text="Pick Up Address"-->
+<!--                android:textColor="@color/app_yellow"-->
+<!--                android:id="@+id/pickupaddress"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:fontFamily="@font/segoe"-->
+<!--                android:text="Johar Town"-->
+<!--                android:textColor="@color/app_green"-->
+<!--                android:id="@+id/pickup"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:fontFamily="@font/segoe"-->
+<!--                android:text="Destination Address"-->
+<!--                android:textColor="@color/app_yellow"-->
+<!--                android:id="@+id/to"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:fontFamily="@font/segoe"-->
+<!--                android:text="Ichra"-->
+<!--                android:textColor="@color/app_green"-->
+<!--                android:id="@+id/destination"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1">-->
+
+
+
+<!--            <ImageView-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="50dp"-->
+
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginRight="15dp"-->
+<!--                android:src="@drawable/passenger"-->
+<!--                android:id="@+id/cardriver"-->
+<!--                />-->
+
+<!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_below="@id/cardriver"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_alignParentEnd="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="Hamza Zulfiqar Ali"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textColor="@color/app_dark_green"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textStyle="bold"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginTop="14dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/pname"&ndash;&gt;-->
+<!--&lt;!&ndash;                />&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="25dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="25dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/driveridicon"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_below="@+id/cardriver"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginTop="12dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/driveridicon"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_toLeftOf="@+id/pname"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginRight="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                />&ndash;&gt;-->
+
+<!--        </RelativeLayout>-->
+<!--    </LinearLayout>-->
+</androidx.cardview.widget.CardView>

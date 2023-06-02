@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/driver_signup_bg"
+        tools:context=".SignupActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_dark_green"
+                android:fontFamily="@font/segoe"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="About Vehivle"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/segoe"
+                        android:text="Vehicel Model"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edit_text_green_bg"
+                        android:fontFamily="@font/segoe"
+                        android:hint="Vehicel Model"
+                        android:padding="10dp"
+
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/segoe"
+                        android:text="Vehicel Year"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edit_text_green_bg"
+                        android:fontFamily="@font/segoe"
+                        android:hint="Vehicel Year"
+                        android:padding="10dp"
+
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/segoe"
+                        android:text="Vehicel Color"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edit_text_green_bg"
+                        android:fontFamily="@font/segoe"
+                        android:hint="Vehicel Color"
+                        android:padding="10dp"
+
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/segoe"
+                        android:text="Vehicel Reg. No"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edit_text_green_bg"
+                        android:fontFamily="@font/segoe"
+                        android:hint="Vehicel Reg. No"
+                        android:padding="10dp"
+
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/segoe"
+                    android:text="Driving Licence No."
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edit_text_green_bg"
+                    android:fontFamily="@font/segoe"
+                    android:hint="Driving Licence No."
+                    android:padding="10dp"
+
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/segoe"
+                    android:text="Car Seating Capacity:"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/segoe"
+                        android:text="Two" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/segoe"
+                        android:text="Four" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/segoe"
+
+                        android:text="Five" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/segoe"
+                        android:text="Six" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+<!--            <HorizontalScrollView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--&lt;!&ndash;                <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginBottom="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:orientation="horizontal"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:padding="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:weightSum="3">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <androidx.cardview.widget.CardView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginLeft="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginTop="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginBottom="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:elevation="8dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:orientation="horizontal"&ndash;&gt;-->
+<!--&lt;!&ndash;                        card:cardCornerRadius="15dp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:orientation="vertical">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            <RelativeLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:layout_height="wrap_content">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                                <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                                    android:layout_width="120dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                                    android:adjustViewBounds="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                                    android:scaleType="fitXY"&ndash;&gt;-->
+<!--&lt;!&ndash;                                    android:src="@drawable/ic_baseline_image_24"&ndash;&gt;-->
+<!--&lt;!&ndash;                                    android:tint="@color/app_light_green" />&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                            </RelativeLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                                android:fontFamily="@font/segoe"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:padding="2dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:text="Vehicle\nupload"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:textColor="@color/black"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:textSize="16dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:textStyle="bold" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    </androidx.cardview.widget.CardView>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <androidx.cardview.widget.CardView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginLeft="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginTop="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginBottom="5dp"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        android:elevation="8dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:orientation="horizontal"&ndash;&gt;-->
+<!--&lt;!&ndash;                        card:cardCornerRadius="15dp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:orientation="vertical">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            <RelativeLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:layout_height="wrap_content">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                                <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                                    android:layout_width="120dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                                    android:adjustViewBounds="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                                    android:scaleType="fitXY"&ndash;&gt;-->
+<!--&lt;!&ndash;                                    android:src="@drawable/ic_baseline_image_24"&ndash;&gt;-->
+<!--&lt;!&ndash;                                    android:tint="@color/app_light_green" />&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                            </RelativeLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:fontFamily="@font/segoe"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                                android:gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:padding="2dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:text="Licence\nupload"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:textColor="@color/black"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:textSize="16dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:textStyle="bold" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    </androidx.cardview.widget.CardView>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <androidx.cardview.widget.CardView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginLeft="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginTop="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginBottom="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:elevation="8dp"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        android:orientation="horizontal"&ndash;&gt;-->
+<!--&lt;!&ndash;                        card:cardCornerRadius="15dp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:orientation="vertical">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            <RelativeLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:layout_height="wrap_content">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                                <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                                    android:layout_width="120dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                                    android:adjustViewBounds="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                                    android:scaleType="fitXY"&ndash;&gt;-->
+<!--&lt;!&ndash;                                    android:src="@drawable/ic_baseline_image_24"&ndash;&gt;-->
+<!--&lt;!&ndash;                                    android:tint="@color/app_light_green" />&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                            </RelativeLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:fontFamily="@font/segoe"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                                android:gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:padding="2dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:text="Insurance\nupload"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:textColor="@color/black"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:textSize="16dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                                android:textStyle="bold" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    </androidx.cardview.widget.CardView>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </LinearLayout>&ndash;&gt;-->
+<!--            </HorizontalScrollView>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/btnNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_text_green_bg"
+                    android:fontFamily="@font/segoe"
+                    android:gravity="center"
+
+                    android:padding="10dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:text="Update"
+                    android:textColor="@color/white"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

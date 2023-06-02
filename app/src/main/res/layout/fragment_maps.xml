@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layoutBottom"
+            android:clickable="true"
+            android:enabled="true" />
+
+        <LinearLayout
+            android:id="@+id/layoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+<!--            android:drawableLeft="@drawable/ic_baseline_double_arrow_24"-->
+<!--            android:drawableRight="@drawable/ic_baseline_double_arrow_24"-->
+<!--            android:fontFamily="@font/segoe"-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/btnGoOfflinetwo"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@color/app_yellow"-->
+<!--                android:fontFamily="@font/segoe"-->
+<!--                android:gravity="center"-->
+<!--                android:padding="16dp"-->
+<!--                android:text="Go Offline"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="18dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                />-->
+
+        <LinearLayout
+            android:id="@+id/layoutBottomtwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+<!--            android:drawableLeft="@drawable/ic_baseline_double_arrow_24"-->
+<!--            android:drawableRight="@drawable/ic_baseline_double_arrow_24"-->
+            <TextView
+                android:id="@+id/btnGoOnline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_yellow"
+                android:fontFamily="@font/segoe"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Go Online"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                />
+
+<!--            <TextView-->
+<!--                android:id="@+id/btnGoOffline"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@color/app_yellow"-->
+<!--                android:fontFamily="@font/segoe"-->
+<!--                android:gravity="center"-->
+<!--                android:padding="16dp"-->
+<!--                android:text="Go Offline"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="18dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe"
+                        android:gravity="center"
+                        android:text="Earnings"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/app_dark_green"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:id="@+id/total"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+                        android:fontFamily="@font/segoe"
+                        android:gravity="right|center"
+                        android:paddingRight="15dp"
+                        android:text="Earnings"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/greay" />
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:weightSum="2">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/segoe"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="Activity Score"-->
+<!--                        android:textAllCaps="true" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/segoe"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text=""-->
+<!--                        android:textColor="@color/app_yellow"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"-->
+<!--                        android:gravity="right|center"-->
+<!--                        android:paddingRight="15dp"-->
+
+<!--                        android:text="Activity"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="16dp"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="@color/greay" />
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:weightSum="2">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/segoe"-->
+<!--                        android:gravity="center"-->
+
+<!--                        android:text="Current Rating"-->
+<!--                        android:textAllCaps="true" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:drawableRight="@drawable/ic_baseline_star_24"-->
+<!--                        android:fontFamily="@font/segoe"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text=""-->
+
+<!--                        android:textColor="@color/app_dark_green"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"-->
+<!--                        android:gravity="right|center"-->
+<!--                        android:paddingRight="15dp"-->
+
+<!--                        android:text="Rating"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="16dp"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/greay" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

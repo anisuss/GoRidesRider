@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment_Receipt">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="15dp"
+            android:id="@+id/card">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/check"
+                android:id="@+id/clear"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transaction Receipt"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/segoe"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/receipttext"
+                android:layout_below="@id/clear"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:layout_below="@id/receipttext"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="20dp"
+                android:textColor="@color/app_green"
+                android:fontFamily="@font/segoe"
+                android:id="@+id/amounttext"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₦"
+                android:id="@+id/countrysign"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_below="@id/amounttext"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/segoe"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:id="@+id/amount"
+                android:layout_below="@id/amounttext"
+                android:layout_toRightOf="@id/countrysign"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/segoe"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date &amp; Time (NG)"
+                android:layout_below="@id/amount"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/app_green"
+                android:fontFamily="@font/segoe"
+                android:layout_marginBottom="20dp"
+                android:textSize="18dp"
+                android:id="@+id/datetext"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="27-01-2023:09:17"
+                android:layout_below="@id/datetext"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/segoe"
+                android:layout_marginBottom="20dp"
+                android:textSize="18dp"
+                android:id="@+id/date"
+                android:layout_marginTop="0dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Receiver's Account"
+                android:layout_below="@id/date"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/app_green"
+                android:fontFamily="@font/segoe"
+                android:layout_marginBottom="20dp"
+                android:textSize="18dp"
+                android:id="@+id/receivertext"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go Rides Wallet"
+                android:layout_below="@id/receivertext"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/segoe"
+                android:layout_marginBottom="20dp"
+                android:textSize="18dp"
+                android:id="@+id/receiver"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:layout_below="@id/receiver"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/app_green"
+                android:fontFamily="@font/segoe"
+                android:layout_marginBottom="20dp"
+                android:textSize="18dp"
+                android:id="@+id/statustext"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transaction Successfully"
+                android:layout_below="@id/statustext"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/segoe"
+                android:layout_marginBottom="20dp"
+                android:textSize="18dp"
+                android:id="@+id/transaction"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Driver Name"
+                android:layout_below="@id/transaction"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/app_green"
+                android:fontFamily="@font/segoe"
+                android:layout_marginBottom="20dp"
+                android:textSize="18dp"
+                android:id="@+id/customertext"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hamza Zulfiqar"
+                android:layout_below="@id/customertext"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/segoe"
+                android:layout_marginBottom="20dp"
+                android:textSize="18dp"
+                android:id="@+id/name"/>
+
+        </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Close"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            android:layout_below="@+id/card"
+            android:id="@+id/close"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

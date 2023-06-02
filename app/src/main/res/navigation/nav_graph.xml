@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mapsFragment">
+
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.goridesnigeria.goridesrider.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_mapsFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_mapsFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+        <action
+            android:id="@+id/action_mapsFragment_to_vehicleInfoFragment"
+            app:destination="@id/vehicleInfoFragment" />
+        <action
+            android:id="@+id/action_mapsFragment_to_questionAboutVehicleFragment"
+            app:destination="@id/questionAboutVehicleFragment" />
+        <action
+            android:id="@+id/action_mapsFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_mapsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.goridesnigeria.goridesrider.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.goridesnigeria.goridesrider.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" />
+    <fragment
+        android:id="@+id/vehicleInfoFragment"
+        android:name="com.goridesnigeria.goridesrider.VehicleInfoFragment"
+        android:label="fragment_vehicle_info"
+        tools:layout="@layout/fragment_vehicle_info" />
+    <fragment
+        android:id="@+id/questionAboutVehicleFragment"
+        android:name="com.goridesnigeria.goridesrider.QuestionAboutVehicleFragment"
+        android:label="fragment_question_about_vehicle"
+        tools:layout="@layout/fragment_question_about_vehicle" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.goridesnigeria.goridesrider.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.goridesnigeria.goridesrider.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+</navigation>

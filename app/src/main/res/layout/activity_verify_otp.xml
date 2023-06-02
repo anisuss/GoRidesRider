@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyOtp">
+
+        <TextView
+            android:id="@+id/otptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_centerInParent="true"
+            android:text="Verify OTP"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+<!--        <com.airbnb.lottie.LottieAnimationView-->
+<!--            android:id="@+id/animation_view"-->
+<!--            android:layout_width="200sp"-->
+<!--            android:layout_height="200sp"-->
+<!--            android:layout_below="@id/otptext"-->
+<!--            app:lottie_autoPlay="true"-->
+<!--            app:lottie_loop="true"-->
+<!--            app:lottie_rawRes="@raw/otpscreen"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:paddingBottom="20dp"/>-->
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/otptext"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/otp"
+            android:textColor="@color/black"
+            android:hint="123456"
+            android:background="@color/greay"
+            android:paddingLeft="10dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/otp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/verifybtn"
+            android:text="Verify"
+            android:textAllCaps="true"/>
+</RelativeLayout>

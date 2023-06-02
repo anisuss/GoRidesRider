@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.CardAndAccountsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_dark_green"
+                android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+                android:drawableTint="@color/white"
+
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Cards and accounts"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:layout_marginTop="25dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/circle_text"-->
+<!--                    android:padding="20dp"-->
+<!--                    android:text="MS"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textStyle="bold" />-->
+
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:text="Mr Shaan"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20dp"-->
+<!--                    android:textStyle="bold" />-->
+<!--            </LinearLayout>-->
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:background="@color/greay" />-->
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/circle_stroke_only"
+                android:padding="25dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/creditcard" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="No cards added"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Card Payment is Under Development"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/btnNext"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:background="@drawable/round_light_green_bg"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingLeft="25dp"-->
+<!--                android:paddingTop="10dp"-->
+<!--                android:paddingRight="25dp"-->
+<!--                android:paddingBottom="10dp"-->
+<!--                android:text="    Add a card    "-->
+<!--                android:textColor="@color/app_dark_green"-->
+<!--                android:textSize="16dp"-->
+<!--                android:textStyle="bold" />-->
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

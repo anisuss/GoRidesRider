@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessageActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_green"
+        android:id="@+id/top">
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/back"
+            android:id="@+id/back"
+            android:backgroundTint="@color/white"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:fontFamily="@font/segoe"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:layout_above="@id/entermessage">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top"
+            android:layout_above="@id/entermessage">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/recyclerview"
+        tools:listitem="@layout/chat_design"
+        android:nestedScrollingEnabled="false"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/tworecyclerview"
+        android:layout_alignParentEnd="true"
+        tools:listitem="@layout/passenger_message_layout"
+        android:layout_marginTop="5dp"
+        android:nestedScrollingEnabled="false">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:hint="Enter Message"
+        android:paddingLeft="30dp"
+        android:background="@drawable/edit_text_yellow_bg"
+        android:id="@+id/entermessage"
+        android:paddingRight="40dp"
+        />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/messagesend"
+        android:id="@+id/send"
+        />
+
+</RelativeLayout>

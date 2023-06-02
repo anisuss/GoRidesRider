@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/driver_signup_bg"
+        tools:context=".SignupActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/btnBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_dark_green"
+                    android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+                    android:drawableTint="@color/white"
+                    android:fontFamily="@font/segoe"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Sign Up"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/segoe"
+                    android:text="Earn extra money driving"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/segoe"
+                    android:text="Sign up with Go Rides"
+                    android:textSize="16dp" />
+
+<!--                <ImageView-->
+<!--                    android:layout_width="80dp"-->
+<!--                    android:layout_height="80dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:id="@+id/imgDfront"-->
+<!--                    android:src="@drawable/add_image"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Add Profile Image"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    style="@style/TextHeadingStyle"-->
+<!--                    />-->
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextHeadingStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="First name" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/edit_text_green_bg"
+                                android:hint="First name"
+                                android:id="@+id/edtFirstName"
+                                android:padding="10dp"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextHeadingStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Last name" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/edit_text_green_bg"
+                                android:hint="Last name"
+                                android:id="@+id/edtLastName"
+                                android:padding="10dp"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextHeadingStyle"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:text="Country code" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/edit_text_green_bg"
+                                android:hint="Code"
+                                android:padding="10dp"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="2.9"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextHeadingStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Phone Number" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/edit_text_green_bg"
+                                android:hint="Phone number"
+                                android:padding="10dp"
+                                android:inputType="number"
+                                android:id="@+id/edtPhoneNumber"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TextHeadingStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="City" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edit_text_green_bg"
+                            android:hint="Enter your city"
+                            android:padding="10dp"
+                            android:id="@+id/edtCity"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TextHeadingStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:text="Driving Licence No." />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edit_text_green_bg"
+                            android:hint="Driving Licence No."
+                            android:padding="10dp"
+                            android:id="@+id/edtDrivingLicence"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TextHeadingStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Email" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edit_text_green_bg"
+                            android:hint="Email Address"
+                            android:id="@+id/edtEmail"
+                            android:padding="10dp"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TextHeadingStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Password" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edit_text_green_bg"
+                            android:hint="Enter password"
+                            android:padding="10dp"
+                            android:id="@+id/edtPassword"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white" />
+                    </LinearLayout>
+
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:weightSum="2">-->
+
+
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginRight="15dp"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            card:cardCornerRadius="8dp">-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:orientation="vertical">-->
+
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="100dp"-->
+<!--                                    android:layout_height="100dp"-->
+<!--                                    android:adjustViewBounds="true"-->
+<!--                                    android:scaleType="fitXY"-->
+<!--                                    android:id="@+id/imgDfront"-->
+<!--                                    android:src="@drawable/ic_baseline_image_24"-->
+<!--                                    card:tint="@color/app_light_green" />-->
+
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_marginLeft="2dp"-->
+<!--                                    android:layout_marginRight="2dp"-->
+<!--                                    android:fontFamily="@font/segoe"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:padding="2dp"-->
+<!--                                    android:text="Licence Image"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textSize="16dp"-->
+<!--                                    android:id="@+id/text"/>-->
+
+<!--                            </LinearLayout>-->
+
+<!--                        </androidx.cardview.widget.CardView>-->
+
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            card:cardCornerRadius="8dp">-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:orientation="vertical">-->
+
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="100dp"-->
+<!--                                    android:layout_height="100dp"-->
+<!--                                    android:adjustViewBounds="true"-->
+<!--                                    android:scaleType="fitXY"-->
+<!--                                    android:id="@+id/imgBack"-->
+<!--                                    android:src="@drawable/ic_baseline_image_24"-->
+<!--                                    android:tint="@color/app_light_green" />-->
+
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_marginLeft="2dp"-->
+<!--                                    android:layout_marginRight="2dp"-->
+<!--                                    android:fontFamily="@font/segoe"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:padding="2dp"-->
+<!--                                    android:text="Licence Back"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textSize="16dp" />-->
+
+<!--                            </LinearLayout>-->
+
+<!--                        </androidx.cardview.widget.CardView>-->
+
+<!--                    </LinearLayout>-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/btnNext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="3"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edit_text_green_bg"
+                            android:fontFamily="@font/segoe"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp"
+                            android:text="NEXT"
+                            android:textColor="@color/white"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+
+                            />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/progressView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:indeterminateTint="@color/purple_500"
+                android:indeterminateTintMode="src_atop" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</layout>

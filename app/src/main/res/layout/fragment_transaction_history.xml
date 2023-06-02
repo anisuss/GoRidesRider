@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Fragments.TransactionHistoryFragment">
+
+    <RelativeLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/trip_bg"
+        >
+
+        <LinearLayout
+            android:id="@+id/layoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/imgSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_dark_green"
+                android:drawableTint="@color/white"
+                android:fontFamily="@font/segoe"
+                android:padding="15dp"
+                android:text="My Transaction"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:gravity="center"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recyclerview"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                tools:listitem="@layout/transaction"
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/myMap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layoutBottom"
+            android:clickable="true"
+            android:enabled="true" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_above="@+id/layoutBottom"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="-40dp"
+            android:background="@drawable/text_view_round_circle"
+            android:fontFamily="@font/segoe"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="00\nMin"
+            android:textColor="@color/black"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtFare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTime"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Total Fare: 25₦"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:id="@+id/layoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_person_pin_circle_24" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoe"
+                            android:text="Pickup Point"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize15" />
+
+                        <TextView
+                            android:id="@+id/txtDistance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="( Distance 0 KM)"
+                            android:textColor="@color/app_dark_green"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtOrigin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe"
+                        android:text="Zaiton Life Style"
+                        android:textSize="@dimen/textSize15" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/greay" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_baseline_person_pin_24" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoe"
+                            android:text="Stop"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoe"
+                            android:text="Jia bagga" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/greay" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_pin_drop_24" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe"
+                        android:text="Destination"
+                        android:textColor="@color/black"
+
+                        android:textSize="@dimen/textSize15" />
+
+                    <TextView
+                        android:id="@+id/txtDestination"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe"
+                        android:text="Main rivind road"
+
+                        android:textSize="@dimen/textSize15" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/greay" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/btnNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_text_yellow_bg"
+                    android:fontFamily="@font/segoe"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:text="Click to pickup"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/message"
+                    android:backgroundTint="@color/app_green"
+                    android:id="@+id/message"
+                    />
+
+<!--                <ImageButton-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:background="@drawable/call"-->
+<!--                    android:backgroundTint="@color/app_green"-->
+<!--                    android:id="@+id/call"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    />-->
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

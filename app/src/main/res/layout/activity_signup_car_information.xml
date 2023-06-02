@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/driver_signup_bg"
+        tools:context=".SignupActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_dark_green"
+                android:drawableTint="@color/white"
+                android:fontFamily="@font/segoe"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="About Vehicle"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextHeadingStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vehicel Model" />
+
+                    <EditText
+                        android:id="@+id/edtVmodel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edit_text_green_bg"
+                        android:fontFamily="@font/segoe"
+                        android:hint="Vehicel Model"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextHeadingStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vehicel Year" />
+
+                    <EditText
+                        android:id="@+id/edtVyear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edit_text_green_bg"
+                        android:fontFamily="@font/segoe"
+                        android:hint="Vehicel Year"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextHeadingStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vehicel Color" />
+
+                    <EditText
+                        android:id="@+id/edtYcolor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edit_text_green_bg"
+                        android:fontFamily="@font/segoe"
+                        android:hint="Vehicel Color"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextHeadingStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="Vehicel Reg. No" />
+
+                    <EditText
+                        android:id="@+id/edtVregno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edit_text_green_bg"
+                        android:fontFamily="@font/segoe"
+                        android:hint="Vehicel Reg. No"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    style="@style/TextHeadingStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:fontFamily="@font/segoe"
+                    android:text="Car Seating Capacity:" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/segoe"
+                        android:text="Two"
+
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbFour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/segoe"
+                        android:text="Four"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbFive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/segoe"
+                        android:text="Five"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbSix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/segoe"
+                        android:text="Six"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+<!--            <HorizontalScrollView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="5dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:weightSum="3">-->
+
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:layout_marginBottom="5dp"-->
+<!--                        android:elevation="8dp"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        card:cardCornerRadius="15dp">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="vertical">-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content">-->
+
+<!--                                <ImageView-->
+<!--                                    android:id="@+id/imgVehicle"-->
+<!--                                    android:layout_width="120dp"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:adjustViewBounds="true"-->
+<!--                                    android:scaleType="fitXY"-->
+<!--                                    android:src="@drawable/ic_baseline_image_24"-->
+<!--                                    android:tint="@color/app_light_green" />-->
+
+
+<!--                            </RelativeLayout>-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:fontFamily="@font/segoe"-->
+
+<!--                                android:gravity="center"-->
+<!--                                android:padding="2dp"-->
+<!--                                android:text="Vehicle\nupload"-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:textSize="16dp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                    </androidx.cardview.widget.CardView>-->
+
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:layout_marginBottom="5dp"-->
+
+<!--                        android:elevation="8dp"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        card:cardCornerRadius="15dp">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="vertical">-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content">-->
+
+<!--                                <ImageView-->
+<!--                                    android:id="@+id/imgInsuranceFront"-->
+<!--                                    android:layout_width="120dp"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:adjustViewBounds="true"-->
+<!--                                    android:scaleType="fitXY"-->
+<!--                                    android:src="@drawable/ic_baseline_image_24"-->
+<!--                                    android:tint="@color/app_light_green" />-->
+
+
+<!--                            </RelativeLayout>-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:fontFamily="@font/segoe"-->
+
+<!--                                android:gravity="center"-->
+<!--                                android:padding="2dp"-->
+<!--                                android:text="Insurance\nFront"-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:textSize="16dp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                    </androidx.cardview.widget.CardView>-->
+
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:layout_marginBottom="5dp"-->
+<!--                        android:elevation="8dp"-->
+
+<!--                        android:orientation="horizontal"-->
+<!--                        card:cardCornerRadius="15dp">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="vertical">-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content">-->
+
+<!--                                <ImageView-->
+<!--                                    android:id="@+id/imgInsuranceBack"-->
+<!--                                    android:layout_width="120dp"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:adjustViewBounds="true"-->
+<!--                                    android:scaleType="fitXY"-->
+<!--                                    android:src="@drawable/ic_baseline_image_24"-->
+<!--                                    android:tint="@color/app_light_green" />-->
+
+
+<!--                            </RelativeLayout>-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:fontFamily="@font/segoe"-->
+
+<!--                                android:gravity="center"-->
+<!--                                android:padding="2dp"-->
+<!--                                android:text="Insance\nBack"-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:textSize="16dp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                    </androidx.cardview.widget.CardView>-->
+
+<!--                </LinearLayout>-->
+<!--            </HorizontalScrollView>-->
+
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:fontFamily="@font/segoe"
+
+                android:text="By signing up you accept our Terms of Services and Privacy Policy" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/btnNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_text_green_bg"
+                    android:fontFamily="@font/segoe"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:text="NEXT"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlCarInspection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/driver_signup_bg"
+            tools:context=".SignupActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/btnBackInspection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_dark_green"
+                    android:drawableTint="@color/white"
+                    android:fontFamily="@font/segoe"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Electrical, Engine &amp; A/C"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextHeadingStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Does the car start without any lag and is the battery terminal properly fitted?" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RadioGroup
+                            android:id="@+id/rgBattery"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+
+
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+
+                                android:layout_marginRight="25dp"
+
+                                android:text="No" />
+
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextHeadingStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Do the windscreen wipers turn on and off and wipe properly?" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RadioGroup
+                            android:id="@+id/rgWiper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+
+                                android:layout_marginRight="25dp"
+
+                                android:text="No" />
+
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextHeadingStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Does the horn work?" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RadioGroup
+                            android:id="@+id/rgHorn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+
+                                android:layout_marginRight="25dp"
+
+                                android:text="No" />
+
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextHeadingStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Do all the lights work?" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RadioGroup
+                            android:id="@+id/rgLights"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+
+                                android:layout_marginRight="25dp"
+
+                                android:text="No" />
+
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextHeadingStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Do all the indicators turn on?" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RadioGroup
+                            android:id="@+id/rgIndicators"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+
+                                android:layout_marginRight="25dp"
+
+                                android:text="No" />
+
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/btnComplete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="3"
+                        android:background="@drawable/edit_text_green_bg"
+                        android:fontFamily="@font/segoe"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:text="Complete"
+                        android:textColor="@color/white"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/progressView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:indeterminateTint="@color/purple_500"
+                    android:indeterminateTintMode="src_atop" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</layout>

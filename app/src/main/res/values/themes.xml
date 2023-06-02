@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.GoRidesRider" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="TextHeadingStyle">
+        <item name="android:fontFamily">@font/segoe</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/black</item>/>
+    </style>
+
+    <style name="DefaultTheme">
+        <item name="OTPButtonStyle">@style/otpBtnStyle</item>
+        <item name="PayButtonStyle">@style/payBtnStyle</item>
+        <item name="PinButtonStyle">@style/pinButtonStyle</item>
+        <item name="OTPHeaderStyle">@style/otpHeaderStyle</item>
+        <item name="TabLayoutStyle">@style/tabLayoutStyle</item>
+        <item name="PinHeaderStyle">@style/pinHeaderStyle</item>
+        <item name="SavedCardButtonStyle">@style/svdCardsBtnStyle</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <!--   android:layout_marginTop="5dp"
+           android:background="@drawable/edit_text_green_bg"
+           android:hint="First name"
+           android:padding="10dp"
+           android:textColor="@color/white"
+           android:textColorHint="@color/white-->
+
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="editTextBackground">@drawable/edit_text_green_bg</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="hintTextColor">@color/white</item>
+
+    </style>
+</resources>

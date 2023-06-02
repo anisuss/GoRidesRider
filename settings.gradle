@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+
+        // maven { url 'https://dl.bintray.com/ss564/SlidingButton' }
+
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        // maven { url 'https://dl.bintray.com/ss564/SlidingButton' }
+    }
+}
+rootProject.name = "GoRidesRider"
+include ':app'
