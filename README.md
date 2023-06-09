@@ -1,2 +1,2 @@
 # GoRidesRider
-After uploading android app on playstore code. playstore app is live till now.
+Goride SAAS App like uber. Its ride booking app.
